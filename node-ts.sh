@@ -45,6 +45,7 @@ cat << EOF > tsconfig.json
         "typeRoots": ["./node_modules/@types"],
         "outDir": "dist",
         "rootDir": "src",
+        "sourceMap": true,
         "strict": true,
         "strictNullChecks": true,
         "strictFunctionTypes": true,
