@@ -19,9 +19,9 @@ npm i -D ts-node typescript @types/express @types/node nodemon
 # Step 4: Create src directory and index.ts file
 mkdir src
 cat << EOF > src/index.ts
-import dotenv from "dotenv";
-dotenv.config();
-const PORT = process.env.PORT || 8080;
+import { config } from "dotenv";
+config();
+const PORT = process.env?.PORT ?? 8080;
 
 import express from "express";
 const app = express();
